@@ -1,5 +1,5 @@
 import { put, call, takeEvery } from 'redux-saga/effects';
-import { types, actionCreators } from '../reducers/GHReducer';
+import { types, actionCreators } from '../Reducers/GHReducer';
 import axios from 'axios';
 
 function *onFetch(action) {

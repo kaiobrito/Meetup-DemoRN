@@ -7,7 +7,7 @@
  import React, { Component } from 'react';
  import { AppRegistry } from 'react-native';
  import { Provider } from 'react-redux';
- import createStore from './src/store';
+ import createStore from './src/Store';
  import Meetup from './src/App';
 
  const App = () => (

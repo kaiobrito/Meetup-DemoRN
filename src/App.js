@@ -3,9 +3,8 @@ import { View, Text, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import { SearchBar } from './components/SearchBar';
-import { GridView } from './components/GridView';
-import { actionCreators } from './reducers/GHReducer';
+import { GridView, SearchBar } from './Components';
+import { actionCreators } from './Reducers/GHReducer';
 
 const styles = {
   container: {
