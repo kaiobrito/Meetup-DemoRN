@@ -49,7 +49,7 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case types.FETCH:
-      return {...state, refreshing: true, error: false}
+      return {...state, refreshing: true, error: false, items: []}
     case types.UPDATE_TERM:
       return {...state, term: action.payload.term};
     case types.FETCH_USERS_SUCCESS:

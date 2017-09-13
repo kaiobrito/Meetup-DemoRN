@@ -10,9 +10,8 @@ import { GridRow } from './GridRow';
 export const GridView = props => {
     return (
         <FlatList
-            refreshing={props.refreshing}
+            {...props}
             style={{flex: 1}}
-            data={props.data}
             ItemSeparatorComponent={Separator}
             renderItem={({item}) => (
                 <TouchableOpacity onPress={() => props.onSelectItem(item)}>
